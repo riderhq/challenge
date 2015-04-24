@@ -1,0 +1,94 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Challenge</title>
+
+    <!--A few libraries to make things look nice...-->
+    <script src='https://code.jquery.com/jquery-1.11.2.min.js' type='text/javascript'> </script>
+    <script src='https://code.jquery.com/ui/1.11.4/jquery-ui.min.js' type='text/javascript'> </script>
+    <link href='https://code.jquery.com/ui/1.11.4/themes/ui-darkness/jquery-ui.css' type='text/css' rel='stylesheet'/>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.2/moment.min.js' type='text/javascript'> </script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://getbootstrap.com/examples/cover/cover.css">
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <!-- ...several GB of downloads later-->
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+    <style type="text/css">
+        .label{color:#aaa; padding-left:1em; }
+    </style>
+
+    <script src='challenge.js' type='text/javascript'> </script>
+</head>
+<body>
+
+<div class="site-wrapper">
+
+    <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+            <div class="masthead clearfix">
+                <div class="inner">
+                    <h3 class="masthead-brand">RiderHQ Promotions</h3>
+                    <nav>
+                        <ul class="nav masthead-nav">
+                            <li class="active"><a href="#" class="titleshort">This event</a></li>
+                            <li ><a href="#" class="more">More events</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="inner cover">
+
+                <h1 >
+                    <span id="img"></span>
+                    <span class="title"></span>
+
+                </h1>
+                <p><span class="label">On</span><span class="startdate"></span> <span class="label">at</span><span class="starttime"></span></p>
+                <p><span class="dist"></span> <span class="label">Category</span><span class="cat"></span> </p>
+                <p><span class="label">HQ:</span> <span class="location"></span></p>
+                <p class="lead" style="margin-top:2em;">
+                    <a href="#" class="btn btn-lg btn-default enterbutton"><span id="fee"></span> Enter Now</a>
+                </p>
+                <p>
+                    <a id="showmore" href="#"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span> &nbsp;More details</a>
+                </p>
+                <div id="moredetails">
+                    <p><span id="max"></span><span class="label"> Places</span> <span id="waiting"></span> <span class="label">waiting list</span></p>
+                    <p><span id="desc"></span></p>
+                </div>
+            </div>
+
+            <div class="mastfoot">
+                <div class="inner">
+                    <p><span class="glyphicon glyphicon-send" aria-hidden="true"></span></p>
+                    <div>Follow us on
+                        <a href="https://www.twitter.com/riderhq" class="twitter">Twitter</a>
+                    </div><div>
+                    Contact us at
+                    <a href="mailto:info@riderhq.com" class="email">info@riderhq.com</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
